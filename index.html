@@ -549,7 +549,7 @@
     <script src="js/carousel.js"></script>
     <script src="js/animate.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/echarts.min.js"></script>
+    <!-- <script src="js/echarts.min.js"></script> -->
     <script>
         //time
         var items = document.querySelectorAll(".timeline li");
@@ -579,7 +579,7 @@
         window.addEventListener("load", callbackFunc);
         window.addEventListener("scroll", callbackFunc);
         //home
-        $(".slideBox").slide({ mainCell: ".bd ul", autoPlay: true, delayTime: 700 });
+        $(".slideBox").slide({ mainCell: ".bd ul", autoPlay: true, delayTime: 700, interTime: 5000 });
         //bie
         // 基于准备好的dom，初始化echarts实例
         // var myChart = echarts.init(document.getElementById('main'));
